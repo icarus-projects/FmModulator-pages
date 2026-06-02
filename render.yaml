@@ -5,8 +5,8 @@ services:
   - type: web
     name: icarus
     runtime: static
-    staticPublishPath: .
-    buildCommand: echo "prebuilt: JS ya ofuscado, sin build"
+    staticPublishPath: ./
+    buildCommand: echo prebuilt
     pullRequestPreviewsEnabled: false
     headers:
       - path: /*.wasm
