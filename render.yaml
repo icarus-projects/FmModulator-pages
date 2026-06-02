@@ -1,0 +1,14 @@
+# Generado por build.js — NO editar a mano.
+# Config de Render para el repo PÚBLICO (FmModulator-pages): sirve el JS ya
+# ofuscado como sitio estático, sin paso de build. La URL sale del campo name.
+services:
+  - type: web
+    name: icarus
+    runtime: static
+    staticPublishPath: .
+    buildCommand: echo "prebuilt: JS ya ofuscado, sin build"
+    pullRequestPreviewsEnabled: false
+    headers:
+      - path: /*.wasm
+        name: Content-Type
+        value: application/wasm
